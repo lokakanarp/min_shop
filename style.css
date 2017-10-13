@@ -1,0 +1,120 @@
+body {
+     background-image: url('images/cords.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Karla', sans-serif;
+    font-size: 1.5em;
+}
+.box_wrapper {
+    background-color: #58C1A5;
+     
+}
+
+.box_header {
+    background-color: #58C1A5;      
+}
+.box_header_time {
+    background-color: #58C1A5;
+    padding: 3% 8% 3% 0;
+    text-align: right;      
+}
+
+.box_order {
+    background-color: #676867;
+    text-align: center;
+    padding: 3% 0 3% 0;
+}
+.box1 {
+    background-color: white;
+    padding: 3% 0 3% 12%;   
+}
+.box2 {
+    background-color: #75D9BF;
+    padding: 3% 0 3% 10%;
+  
+}
+.box_wrapper2 {
+    background-color: white;   
+}
+.box_wrapper3 {
+    background-color: white;
+}
+.box_dina_bestallningar {
+    background-color: white;
+    padding: 8% 0 8% 8%;
+}
+.box_dina_uppgifter {
+    background-color: white; 
+    padding: 8% 0 8% 8%;
+}
+.correction {
+    color: red;
+    font-weight: bold;
+}
+.box_footer {
+    background-color: #676867;
+    padding: 3% 0 3% 10%;   
+}
+input {
+    padding: 0.5%;
+}
+h1 {
+  
+    font-family: 'Lobster', cursive;
+    font-size: 5em;
+    color: white;
+    margin-bottom: 3%;
+    margin-left: 12%;
+}
+h3 {
+    color: white;
+    font-weight: bold;
+    padding: 0 3% 1% 3%;
+}
+h4 {
+    font-family: 'Lobster', cursive;
+    color: #1BA480;
+    font-size: 1.6em;
+}
+h5 {
+    font-family: 'Lobster', cursive;
+    color: black;
+    font-size: 1.6em; 
+    padding-bottom: 2%;
+}
+p {
+    //margin: 0;
+}
+.pris {
+    font-size: 2.3em;
+    font-weight: bold;
+    margin: 0;
+}
+.datum {
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+ul{
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+
+.formular {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.formular_2 {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin: 0;
+}
+.footer_text {
+    color: white;
+    
+}
+
+
