@@ -17,6 +17,7 @@
      <header>
       <div class='container'> 
          <div class="box_wrapper col-lg-12">
+         
           <div class="box_header col-lg-6">
             <h1>Shoppa.nu</h1>       
           </div>
@@ -33,9 +34,11 @@
       </div>
     </header>
    <main>
-    <div class='container'>   
-      
-        <form action="form.php" method="POST">
+   <div class='container'> 
+    <form action="form.php" method="POST">
+          
+          <div class="row">
+       
             <div class="box_order col-lg-12">
                 <h3>Missa inte höstens erbjudanden. Nya priser nästan varje dag.</h3>
                   <?php 
@@ -44,7 +47,8 @@
                 }
                 ?>
             </div>
-            <div class="box_wrapper3 col-sm-12">
+            </div>
+        <div class="row">
              <?php   
 
             for ($row = 0; $row < 4; $row++) {
@@ -79,7 +83,8 @@
                     echo '<input type="hidden" name="price[]" value="'. $products[$row]["price"].'" />'; }
                     echo '</div>'; }      
                 ?> 
-        </div>
+               
+        
         <div class="box2 col-lg-12">
           <h5>Ange dina kunduppgifter:</h5>
                <p class="formular">För- och efternamn:<br>
@@ -96,11 +101,11 @@
                </p>
             <input class="button" type="submit" value="Skicka" />
           </div>   
+     
+    </div>  
      </form> 
-       
  </div> <!-- slut på container -->
-         
-          
+                
 </main> 
    <footer>
      <div class='container'>

@@ -2,8 +2,12 @@ body {
      background-image: url('images/cords.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background: cover;
     font-family: 'Karla', sans-serif;
     font-size: 1.5em;
+}
+.container {
+    background-color: white;
 }
 .box_wrapper {
     background-color: #58C1A5;
