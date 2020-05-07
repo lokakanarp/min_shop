@@ -4,21 +4,21 @@ $products = array(
   array(
     "name"    => "Fidget Spinner",
     "price"   => 100,
-    "color"   => "Invisible"
+    "color"   => "Vit"
   ),
   array(
     "name"    => "VR-glasses",
     "price"   => 299,
-    "color"   => "Black"
+    "color"   => "Svart"
   ),
   array(
     "name"    => "Power Bank",
     "price"   => 399,
-    "color"   => "White"
+    "color"   => "Vit"
   ),
   array(
-    "name"    => "Fidget Spinner Delux",
+    "name"    => "Fidget Spinner Deluxe",
     "price"   => 999,
-    "color"   => "Gold"
+    "color"   => "Silver/guld"
   )
 );

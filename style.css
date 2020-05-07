@@ -1,26 +1,52 @@
 body {
-     background-image: url('images/cords.jpg');
-    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url('images/cords.jpg');
+    background-repeat: repeat;
     background-attachment: fixed;
     background: cover;
     font-family: 'Karla', sans-serif;
     font-size: 1.5em;
 }
+main {
+  flex: 1;
+  min-height: auto;
+}
 .container {
     background-color: white;
+    padding: 0;
+    height: 100%;
+}
+.main_container {
+  display: flex;
+  flex-direction: column;
+}
+.products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 49%;
+  padding: 5% 0;
+  box-sizing: border-box;
 }
 .box_wrapper {
     background-color: #58C1A5;
-     
+
 }
 
 .box_header {
-    background-color: #58C1A5;      
+    background-color: #58C1A5;
 }
 .box_header_time {
     background-color: #58C1A5;
     padding: 3% 8% 3% 0;
-    text-align: right;      
+    text-align: right;
 }
 
 .box_order {
@@ -30,15 +56,15 @@ body {
 }
 .box1 {
     background-color: white;
-    padding: 3% 0 3% 12%;   
+    padding: 3% 0 3% 12%;
 }
 .box2 {
     background-color: #75D9BF;
     padding: 3% 0 3% 10%;
-  
+
 }
 .box_wrapper2 {
-    background-color: white;   
+    background-color: white;
 }
 .box_wrapper3 {
     background-color: white;
@@ -48,7 +74,7 @@ body {
     padding: 8% 0 8% 8%;
 }
 .box_dina_uppgifter {
-    background-color: white; 
+    background-color: white;
     padding: 8% 0 8% 8%;
 }
 .correction {
@@ -56,19 +82,29 @@ body {
     font-weight: bold;
 }
 .box_footer {
-    background-color: #676867;
-    padding: 3% 0 3% 10%;   
+    padding: 3% 0 3% 10%;
+    width: 48%;
 }
 input {
     padding: 0.5%;
 }
+.header {
+
+  padding: 5%;
+}
+.header_inside_wrap {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
 h1 {
-  
+
     font-family: 'Lobster', cursive;
     font-size: 5em;
     color: white;
-    margin-bottom: 3%;
-    margin-left: 12%;
+    margin-top: 0;
 }
 h3 {
     color: white;
@@ -83,11 +119,8 @@ h4 {
 h5 {
     font-family: 'Lobster', cursive;
     color: black;
-    font-size: 1.6em; 
+    font-size: 1.6em;
     padding-bottom: 2%;
-}
-p {
-    //margin: 0;
 }
 .pris {
     font-size: 2.3em;
@@ -106,7 +139,7 @@ li{
     list-style: none;
 }
 
-.formular {
+.box2_form {
     font-weight: bold;
     font-size: 1.2em;
 }
@@ -116,9 +149,42 @@ li{
     font-size: 1.2em;
     margin: 0;
 }
-.footer_text {
-    color: white;
-    
+footer {
+  background-color: #676867;
 }
+.footer {
+  display: flex;
+  flex-direction: column;
+  width: 750px;
+  margin: 0 auto;
+  padding-bottom: 3%;
+}
+.footer p, a {
+    color: white;
+}
+.footer a {
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+}
+@media screen and (min-width: 1025px) {
+  .footer {
+    flex-direction: row;
+    justify-content: space-around;
+    width: 800px;
+  }
+  .box_footer {
+      padding: 3% 0 3% 0;
+  }
+  .products {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .main_container {
+    width: 800px;
+  }
+  .header_inside_wrap {
+    width: 800px;
+  }
 
-
+}
