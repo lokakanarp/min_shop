@@ -6,8 +6,9 @@ function even_day_odd_week() { //determine whether it is a even date, odd week, 
    }
 }
 function swedish_date() {
-  setlocale(LC_ALL,"sv_SE");  //Month in Swedish
+  //setlocale(LC_ALL,"sv_SE");  //Month in Swedish
   $day = date("l");
+  $currentMonth = date("F");
 
   $weekdays = array("Monday" => "Måndagen",
   "Tuesday" => "Tisdagen",
@@ -17,8 +18,24 @@ function swedish_date() {
   "Saturday" => "Lördagen",
   "Sunday" => "Söndagen"
   );
+
+  $months = array(
+    "January" => "Januari",
+    "February" => "Februari",
+    "March" => "Mars",
+    "April" => "April",
+    "May" => "Maj",
+    "June" => "Juni",
+    "July" => "Juli",
+    "August" => "Augusti",
+    "September" => "September",
+    "October" => "Oktober",
+    "November" => "November",
+    "December" => "December"
+  );
   $swedishWeekday = $weekdays[$day];
- echo "<p class='datum'>$swedishWeekday den" . strftime("%e %B") . "</p>
+  $swedishmonth = $months[$currentMonth];
+ echo "<p class='datum'>$swedishWeekday den" . strftime("%e") . " $swedishmonth</p>
       <p class='datum'>Vecka " . date("W") . "</p>
       <p class='datum'>Klockan " . date("H") . ":" . date("i") . "</p>";
 }
