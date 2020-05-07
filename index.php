@@ -110,7 +110,7 @@
            Shoppa.nu was created by Loka Kanarp as a school assignment at Medieinstitutet.
            It's made with PHP, HTML and CSS. 2017, 2020.
            </p>
-           <a href="https://github.com/lokakanarp/shop2020">GitHub repo</a>
+           <a href="https://github.com/lokakanarp/min_shop">GitHub repo</a>
        </div>
     </div>
    </footer>
