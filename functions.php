@@ -35,7 +35,7 @@ function swedish_date() {
   );
   $swedishWeekday = $weekdays[$day];
   $swedishmonth = $months[$currentMonth];
- echo "<p class='datum'>$swedishWeekday den" . strftime("%e") . " $swedishmonth</p>
+ echo "<p class='datum'>$swedishWeekday den " . strftime("%e") . " $swedishmonth</p>
       <p class='datum'>Vecka " . date("W") . "</p>
       <p class='datum'>Klockan " . date("H") . ":" . date("i") . "</p>";
 }
